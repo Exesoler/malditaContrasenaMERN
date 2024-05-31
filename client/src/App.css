@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.main {
+  min-width: 30vw;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -12,10 +16,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.6666666667));
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.6666666667));
 }
 
 @keyframes logo-spin {
@@ -26,18 +30,15 @@
     transform: rotate(360deg);
   }
 }
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
-
 .card {
   padding: 2em;
 }
-
-.cardCenter{
+.cardCenter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,3 +49,19 @@
 .read-the-docs {
   color: #888;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav > a {
+  padding: 0.5rem;
+}
+nav > a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+form .inputForm {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=App.css.map */

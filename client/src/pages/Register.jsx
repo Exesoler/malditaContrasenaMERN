@@ -20,10 +20,10 @@ export default function Register() {
       <Card className="cardCenter">
         <CardBody>
           <form onSubmit={registerUser}>
-            <Input type="text" label="Nombre de usuario" value={data.name} onChange={(e) => setData({...data, name: e.target.value})}/>
-            <Input type="email" label="Correo electrónico" value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })} />
-            <Input type="password" label="Contraseña" value={data.password} onChange={(e) => setData({ ...data, password: e.target.value })} />
-            <Button color='primary' variant='flat' type='submit'>Registrar</Button>
+            <Input className="inputForm" type="text" label="Nombre de usuario" value={data.name} onChange={(e) => setData({...data, name: e.target.value})}/>
+            <Input className="inputForm" type="email" label="Correo electrónico" value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })} />
+            <Input className="inputForm" type="password" label="Contraseña" value={data.password} onChange={(e) => setData({ ...data, password: e.target.value })} />
+            <Button color='primary' variant='flat' fullWidth='true' type='submit'>Registrar</Button>
           </form>
         </CardBody>
       </Card>

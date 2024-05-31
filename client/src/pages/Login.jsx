@@ -21,9 +21,9 @@ export default function Login() {
       <Card className="cardCenter">
         <CardBody>
           <form onSubmit={loginUser}>
-            <Input type="email" label="Correo electrónico" value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })} />
-            <Input type="password" label="Contraseña" value={data.password} onChange={(e) => setData({ ...data, password: e.target.value })} />
-            <Button color='primary' variant='flat' type='submit'>Acceder</Button>
+            <Input className="inputForm" type="email" label="Correo electrónico" value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })} />
+            <Input className="inputForm" type="password" label="Contraseña" value={data.password} onChange={(e) => setData({ ...data, password: e.target.value })} />
+            <Button color='primary' variant='flat' fullWidth='true' type='submit'>Acceder</Button>
           </form>
         </CardBody>
       </Card>
