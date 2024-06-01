@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Card, CardBody } from "@nextui-org/card";
 import { Input } from "@nextui-org/react";
-import { Button, ButtonGroup } from "@nextui-org/button";
+import { Button } from "@nextui-org/button";
+import logoSite from "./../assets/logoSite.png";
 
 export default function Register() {
 
@@ -16,9 +17,12 @@ export default function Register() {
   }
 
   return (
-    <div>
+    <div className="containerCenter">
       <Card className="cardCenter">
-        <CardBody>
+        <CardBody className="overflowVisible">
+          <div className="logoSite register">
+            <img src={logoSite} />
+          </div>
           <form onSubmit={registerUser}>
             <Input className="inputForm" type="text" label="Nombre de usuario" value={data.name} onChange={(e) => setData({...data, name: e.target.value})}/>
             <Input className="inputForm" type="email" label="Correo electrónico" value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })} />
