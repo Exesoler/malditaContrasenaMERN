@@ -1,0 +1,14 @@
+header{
+   padding: 1rem 0;
+   background-color: #001731;
+   .fila{
+      .logoContainer{
+         img{
+            max-width: 100px;
+         }
+      }
+      .actions{
+         justify-content: flex-end;
+      }
+   }
+}

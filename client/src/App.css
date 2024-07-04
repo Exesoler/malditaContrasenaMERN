@@ -11,8 +11,10 @@
 }
 
 main {
-  max-width: 1280px;
-  width: 100%;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .logo {
@@ -46,6 +48,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 100dvh;
+  flex-direction: column;
 }
 
 .overflowVisible {
@@ -71,7 +74,7 @@ main {
 }
 
 nav {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -96,4 +99,32 @@ form .inputForm {
 .logoSite.login > img, .logoSite.register > img {
   max-width: 20vw;
   margin-top: -6rem;
+}
+
+.contenedor {
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor div {
+  display: flex;
+  padding: 0px 1rem;
+}
+.contenedor .fila {
+  max-width: 1110px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -1rem;
+}
+.contenedor .fila .col {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+.contenedor .fila .col-auto {
+  flex-shrink: 1;
+  flex-grow: 0;
+  width: -moz-fit-content;
+  width: fit-content;
 }/*# sourceMappingURL=App.css.map */

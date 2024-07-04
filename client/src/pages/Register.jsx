@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardBody } from "@nextui-org/card";
 import { Input } from "@nextui-org/react";
 import { Button } from "@nextui-org/button";
@@ -16,6 +17,8 @@ export default function Register() {
     e.preventDefault();
   }
 
+  showHeader = false;
+
   return (
     <div className="containerCenter">
       <Card className="cardCenter">
@@ -31,6 +34,11 @@ export default function Register() {
           </form>
         </CardBody>
       </Card>
+      <div className="row">
+        <div className="col">
+          <Link to='/login'><Button color='default' variant='flat' fullWidth='true' type='submit'>Loguearte</Button></Link>
+        </div>
+      </div>
     </div>
   )
 }

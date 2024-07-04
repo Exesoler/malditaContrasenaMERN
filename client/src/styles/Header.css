@@ -1,0 +1,10 @@
+header {
+  padding: 1rem 0;
+  background-color: #001731;
+}
+header .fila .logoContainer img {
+  max-width: 100px;
+}
+header .fila .actions {
+  justify-content: flex-end;
+}/*# sourceMappingURL=Header.css.map */

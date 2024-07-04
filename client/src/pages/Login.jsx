@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardBody } from "@nextui-org/card";
 import { Input } from "@nextui-org/react";
 import { Button } from "@nextui-org/button";
 import logoSite from "./../assets/logoSite.png";
-
 
 export default function Login() {
 
@@ -15,6 +15,7 @@ export default function Login() {
   const loginUser = (e) => {
     e.preventDefault();
   }
+
 
   return (
 
@@ -31,6 +32,11 @@ export default function Login() {
           </form>
         </CardBody>
       </Card>
+      <div className="row">
+        <div className="col">
+          <Link to='/register'><Button color='default' variant='flat' fullWidth='true' type='submit'>Registrarte</Button></Link>
+        </div>
+      </div>
     </div>
   )
 }

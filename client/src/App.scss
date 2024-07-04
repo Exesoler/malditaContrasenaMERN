@@ -11,8 +11,10 @@
 }
 
 main{
-   max-width: 1280px;
-   width: 100%;
+   width: 100dvw;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
 }
 
 .logo {
@@ -51,6 +53,7 @@ main{
    align-items: center;
    justify-content: center;
    height: 100dvh;
+   flex-direction: column;
 }
 
 .overflowVisible{
@@ -76,8 +79,8 @@ main{
 }
 
 nav{
-   display: none;
-   // display: flex;
+   // display: none;
+   display: flex;
    align-items: center;
    justify-content: center;
    >a{
@@ -105,6 +108,37 @@ form{
       >img{
          max-width: 20vw;
          margin-top: -6rem;
+      }
+   }
+}
+
+.contenedor {
+   width: 100dvw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
+   div {
+      display: flex;
+      padding: 0px 1rem;
+   }
+
+   .fila {
+      max-width: clamp(320px, 1110px, 1366px);
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: 0 -1rem;
+
+      .col{
+         flex-shrink: 0;
+         flex-grow: 1;
+         &-auto{
+            flex-shrink: 1;
+            flex-grow: 0;
+            width: fit-content;
+         }
       }
    }
 }
